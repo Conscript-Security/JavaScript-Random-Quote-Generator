@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.full-screen-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(red 0, blue 100%);
+    background-color: hsla(150, 11%, 19%, 0.62);
+    background-blend-mode: normal;
+    min-width: 450px;
+    min-height: 530px;
+}
+
+.quote-container {
+    margin-top: 20vh;
+    background: hsla(150, 11%, 19%, 0.3);
+    height: 35vh;
+    width: 55vw;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 600px;
+    min-width: 450px;
+    min-height: 250px;
+    overflow: hidden;
+}
+
+.text-area {
+    position: relative;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 12rem;
+    padding: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.text-area > p {
+    font-family: sans-serif;
+    text-align: center;
+    padding: .1rem;
+    margin: .1rem;
+    color: white;
+}
+
+.text-area > #source {
+    position: absolute;
+    bottom: 1.2rem;
+    right: 2rem;
+    font-weight: 200;
+    font-style: italic;
+}
+.text-area #quote {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.button-area {
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+    padding: .2rem;
+    margin-bottom: 1em;
+}
+.button-area > #next-btn {
+    color: white;
+    background: blue;
+    padding: .2rem .7rem;
+    width: 5.2rem;
+    height: 2.5em;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 300;
+    
+}
+.button-area > #next-btn:hover {
+    background: rgb(5, 5, 212);
+}
+
+.button-area > #count-down {
+    color: white;
+    position: absolute;
+    right: 3em;
+    height: 1em;
+    bottom: .1em;
+}
